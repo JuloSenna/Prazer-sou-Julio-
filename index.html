@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu mundo Julio LS</title>
+    <style>
+        /* CSS - Estilização da página */
+        body {
+            background-color: #f0f8ff; /* Cor suave azul claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #2c3e50; /* Cor diferente para o título */
+            text-align: center; /* Título centralizado */
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 1.2em; /* Tamanho de fonte maior */
+            text-align: justify; /* Texto justificado */
+            margin: 20px 0;
+            color: #34495e;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        ul li {
+            margin-bottom: 15px; /* Espaçamento maior entre itens */
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        img {
+            border-radius: 15px; /* Bordas arredondadas */
+            width: 300px; /* Tamanho adequado */
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Estilização da tabela */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+
+        .country-img {
+            width: 80px;
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        /* Estilização do link */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #e74c3c; /* Muda de cor no hover */
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Estilização do botão */
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        button:hover {
+            background-color: #219a52;
+            transform: translateY(-1px);
+        }
+
+        /* Estilização da mensagem */
+        #mensagem {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: center;
+            border: 1px solid #ffeaa7;
+            display: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Título principal com nome -->
+        <h1>Julio Lougue Senna</h1>
+
+        <!-- 2. Parágrafo com autobiografia -->
+        <div class="section">
+            <p>Olá! Meu nome é Julio Lougue Senna, tenho 24 anos e moro em Sapucaia do Sul, região metropolitana de Porto Alegre, RS. Sou estudante de Engenharia de Software e tenho grande interesse por automações, desenvolvimento de software, inteligência artificial e tecnologias emergentes. Além da programação, minha maior paixão é passar tempo com minha família, ainda mais agora que ela cresceu e tenho um nenê de 4 meses para chamar de meu filho, gosto muito jogar e praticar esportes de equipe desde que me entendo por gente. Sempre busco aprender algo novo e me manter atualizado com as últimas tendências da tecnologia para sempre ser um profissional qualificado. Atualmente atuo como desenvolvedor RPA e tenho como objetivo me especializar mais ainda nesta área de desenvolvimento no geral e também de QA, quem sabe no futuro com o diploma, como um QA Engineer e contribuir para projetos que impactem positivamente a sociedade.</p>
+        </div>
+
+        <!-- Botão JavaScript -->
+        <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+        <div id="mensagem"></div>
+
+        <!-- 3. Lista não ordenada com hobbies -->
+        <div class="section">
+            <h2 style="text-align: center; color: #2c3e50;">Meus Hobbies Favoritos</h2>
+            <ul>
+                <li>Passar tempo com a família, principalmente com meu filho e noiva.</li>
+                <li>Programação e desenvolvimento de aplicações web e automações que auxiliam principalmente a diminuir tarefas repetitivas.</li>
+                <li>Jogos de videogame e esportes de equipe com amigos e família.</li>
+            </ul>
+        </div>
+
+        <!-- 4. Imagem representando um hobby -->
+        <div class="section">
+            <h2 style="text-align: center; color: #2c3e50;">Meu Hobby Principal</h2>
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Família feliz - Momentos em família">
+        </div>
+
+        <!-- 5. Tabela com países -->
+        <div class="section">
+            <h2 style="text-align: center; color: #2c3e50;">Países que Gostaria de Visitar</h2>
+            <table>
+                <tr>
+                    <th>País</th>
+                    <th>Imagem</th>
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Japão" class="country-img"></td>
+                </tr>
+                <tr>
+                    <td>Canadá</td>
+                    <td><img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Canadá" class="country-img"></td>
+                </tr>
+                <tr>
+                    <td>Coreia do Sul</td>
+                    <td><img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Coreia do Sul" class="country-img"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 6. Link para site de interesse -->
+        <div class="section">
+            <h2 style="text-align: center; color: #2c3e50;">Site de Interesse</h2>
+            <a href="https://github.com" target="_blank">Visitar GitHub - Plataforma de Desenvolvimento</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript - Função para mostrar mensagem
+        function mostrarMensagem() {
+            const mensagemDiv = document.getElementById('mensagem');
+            const mensagens = [
+                "💪 Acredite em si mesmo - você é capaz de conquistar qualquer objetivo!",
+                "🚀 A tecnologia é uma ferramenta poderosa para transformar o mundo!",
+                "✨ Cada linha de código é um passo em direção ao futuro!",
+                "🎯 Persistência e dedicação são as chaves para o sucesso!"
+            ];
+            
+            const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
+            mensagemDiv.innerHTML = mensagemAleatoria;
+            mensagemDiv.style.display = 'block';
+            
+            // Efeito de fade in
+            mensagemDiv.style.opacity = '0';
+            setTimeout(() => {
+                mensagemDiv.style.transition = 'opacity 0.5s ease';
+                mensagemDiv.style.opacity = '1';
+            }, 10);
+        }
+    </script>
+</body>
+</html>
